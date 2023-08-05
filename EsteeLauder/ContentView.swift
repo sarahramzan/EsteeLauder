@@ -17,15 +17,28 @@ struct HomeView: View{
                         Spacer()
                             .frame(height: 75.0
                             )
-                        //                        Image("estee rectangle 47")
-                        //                            .resizable(resizingMode: .stretch)
-                        //                            .aspectRatio(contentMode: .fill)
-                        //                            .padding(.all)
-                        //                            .frame(width: 350.0)
-                        //                            .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
+                        HStack{
+                            Spacer()
+                                .frame(width: 20.0)
+                            Image("estee square 46")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding(.all)
+                                .border(Color.black, width: 2)
+                            
+                            
+                            Image("estee square 20")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding(.all)
+                                .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
+                            Spacer()
+                                .frame(width: 20.0)
+                        }
+                        Spacer()
+                            .frame(height: 30.0)
                         Text("ESTÉE LAUDER")
                             .font(.custom("Optima", size: 50))
-                            .padding(.bottom)
                         Text("Nutritious Collection")
                             .font(.custom("Optima", size: 30))
                             .padding(.bottom)
@@ -33,19 +46,9 @@ struct HomeView: View{
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fill)
                             .padding(.all)
-                            .frame(width: 350.0)
+                            .frame(width: 340.0)
                             .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
-                        HStack{
-                            Image("estee square 46")
-                                .resizable(resizingMode: .stretch)
-                                .aspectRatio(contentMode: .fit)
-                                .padding(.all)
-                            
-                            Image("estee square 36")
-                                .resizable(resizingMode: .stretch)
-                                .aspectRatio(contentMode: .fit)
-                                .padding(.all)
-                        }
+                        
                     }
                 }
             }
@@ -104,11 +107,11 @@ struct ContentView: View {
                    for: .tabBar)
             QuestionView()
                 .tabItem{
-                    Image(systemName: "questionmark.bubble.fill")
+                    Image(systemName: "gamecontroller.fill")
                      Text("Questions")
                 }
                 .toolbarBackground(
-                    
+
                     // 1
                     Color("pink1"),
                     // 2

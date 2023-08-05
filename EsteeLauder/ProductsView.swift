@@ -100,7 +100,7 @@ struct ProductsView: View {
                                     .resizable(resizingMode: .stretch)
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 300.0)
-                                Image("estee square 6")
+                                Image("estee square 3")
                                     .resizable(resizingMode: .stretch)
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 300.0)
